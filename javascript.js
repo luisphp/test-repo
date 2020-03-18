@@ -2,6 +2,9 @@
 
 alert("Hello world");
 
+let hand_up = "Whatsapp";
+
+
 var suma = 1 + 1;
 
 
@@ -9,3 +12,4 @@ var suma = 1 + 1;
 function(){
 
 }
+
