@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Hello world!</title>
 </head>
-<script type="text/javascript" src="javascript.js"></script>
+<!-- CDN VueJS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ -->
+ <script type="text/javascript" src="vue.js"></script>
 <body>
 
+	
 
-	<header>This is the Header</header>
+	<div id="app" class="container">
+			
+			<h3>Contenido</h3>
 
-	<nav>This is the NavBar</nav>
+			<br>
 
-	<div>This is the SideBar</div>
+			{{titulo}}
 
-	<body>This is the body</body>
+			<ul>
+				<li v-for="fruta of frutas">
+					{{fruta}}
+				</li>
+			</ul>
 
-	<footer>This is the footer</footer>
+	</div>
 
+
+ <script src="vue.js"></script>
+ <script type="text/javascript" src="javascript.js"></script>	
 </body>
 </html>

@@ -1,15 +1,7 @@
-'use_strict'
-
-alert("Hello world");
-
-let hand_up = "Whatsapp";
-
-
-var suma = 1 + 1;
-
-
-//Pending function
-function(){
-
-}
-
+const app = new Vue({
+	el: '#app',
+	data:  {
+		titulo: 'Hola Mundo con Vue',
+		frutas: ['Manzana', 'Pera', 'Patilla']
+	}
+})
