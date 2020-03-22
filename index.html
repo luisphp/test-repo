@@ -22,9 +22,25 @@
 
 			<ul>
 				<li v-for="fruta of frutas">
-					{{fruta}}
+					{{fruta.nombre}} - {{fruta.cantidad}}
+					<span v-if="fruta.cantidad === 0">
+					- Sin stock
+				</span>
 				</li>
 			</ul>
+
+			<div>
+				<h3>V-model</h3>
+				<br>
+				<input type="text" name="name" v-model="nuevaFruta">
+				<button @click="agregarFruta">Agregar</button>
+				<br>
+				<br>
+				<div>
+					{{nuevaFruta}}
+				</div>
+				
+			</div>
 
 	</div>
 
