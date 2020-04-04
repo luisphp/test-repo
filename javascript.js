@@ -10,6 +10,7 @@ const app = new Vue({
 		{nombre:'Fresa', cantidad:90, status:'active'}
 		],
 		nuevaFruta: '',
+		total: 0
 	},
 	methods: {
 		agregarFruta: function (event) {
@@ -20,6 +21,21 @@ const app = new Vue({
 			)
 
 			window.alert('Fruta: '+this.nuevaFruta+' agregada');
+
+			this.nuevaFruta = '';
+
+		}
+	},
+	computed: {
+		sumarFruta(){
+
+			this.total = 0;
+
+			for(fruta of this.frutas){
+				this.total = this.total + fruta.cantidad;
+			}
+
+			return this.total;
 
 		}
 	}
